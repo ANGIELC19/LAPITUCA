@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reserva Completa - La Pituca</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+        body {
+            font-family: "Oswald", sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('img/IMAG 1.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            color: #000000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+        }
+        .container {
+            border: 2px solid #e67e22;
+            border-radius: 10px;
+            padding: 20px;
+            background-color: rgba(249, 243, 233, 0.9);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .container img {
+            max-width: 60%;
+            height: auto;
+        }
+        .container h1 {
+            color: #e67e22;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .container p {
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+        .container button {
+            background-color: #e67e22;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+        .container button:hover {
+            background-color: #d35400;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="img/reserva.png" alt="Registro Completado">
+        <h1>¡Registro Completado!</h1>
+        <p>Gracias por tu reserva. Nos pondremos en contacto contigo pronto.</p>
+        <button onclick="window.location.href='index.html'">Regresar</button>
+    </div>
+</body>
+</html>

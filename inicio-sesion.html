@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Pituca - Iniciar Sesión</title>
+        <style>
+        @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+        @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
+
+        body {
+            background-image: url('img/IMAG 1.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            font-family: "Oswald", sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .back-button {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background-color: #78787849;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 14px;
+            cursor: pointer;
+        }
+        .container {
+            background-color: rgba(255, 255, 255, 0.548);
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 500px;
+            width: 100%;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .form-group {
+            margin-bottom: 15px;
+            text-align: left;
+        }
+        input[type="email"], input[type="password"] {
+            width: 90%;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+        }
+        .btn-login, .btn-google {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 14px;
+        }
+        .btn-login {
+            background-color: #4CAF50;
+            color: white;
+            width: 80%;
+            display: inline-block;
+            text-align: center;
+        }
+        .btn-google {
+            background-color: #fff;
+            color: #757575;
+            border: 1px solid #ddd;
+            width: 100%;
+        }
+        .btn-google img {
+            margin-right: 10px;
+            width: 18px;
+            height: 18px;
+        }
+        .register-link {
+            margin-top: 15px;
+        }
+        .register-link a {
+            color: #0a027f;
+            text-decoration: none;
+        }
+        .register-link a:hover {
+            text-decoration: underline;
+        }
+        .social-icons {
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+    <a href="index.html" class="back-button">Regresar</a>
+    <div class="container">
+        <h1>INICIO DE SESIÓN</h1>
+        <p>¡Bienvenido de nuevo! Por favor ingrese sus datos</p>
+        
+        <form action="" method="post">
+            <div class="form-group">
+                <label for="email">Correo electrónico</label>
+                <input id="email" name="email" required type="email" placeholder="Introduce tu correo electrónico" />
+            </div>
+            
+            <div class="form-group">
+                <label for="password">Contraseña</label>
+                <input id="password" name="password" required type="password" placeholder="••••••••••" />
+            </div>
+        
+            <a href="index.html" class="btn-login">Iniciar sesión</a>
+            
+            <p class="register-link">¿No tienes una cuenta? <a href="registrar-sesion.php">Regístrate gratis</a></p>
+            
+            <div class="social-icons">
+            </div>
+        </div>
+    </body>
+    </html>
